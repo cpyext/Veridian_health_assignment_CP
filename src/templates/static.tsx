@@ -84,35 +84,63 @@ const Static: Template<TemplateRenderProps> = ({ document }) => {
   return (
     <>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* Toplevel Color bars */}
+<div className="flex h-2 w-full">
+  <div className="w-1/3 f-full bg-[#00A86B]"></div>
+  <div className="w-1/3 f-full bg-[#FFFF00]"></div>
+  <div className="w-1/3 f-full bg-[#0000FF]"></div>
+</div>
+
+
+
+
+
+{/* Menu Section Main which includes Logo, Search Bar and SignIn tab */}
+
 <div className="flex items-center justify-between px-4 py-2 bg-white border-b border-gray-300">
+      
       {/* Menu Section */}
       <div className="flex items-center">
-        <span className="text-2xl cursor-pointer">☰</span> {/* Hamburger Menu Icon */}
+        <span className="text-2xl cursor-pointer">☰ Menu</span> {/* Hamburger Menu Icon */}
         <span className="mx-4 text-gray-400">|</span>
       </div>
 
+     
       {/* Logo Section */}
       <div className="flex items-center">
         <img
-          src="your_logo_url_here"
+          src="https://a.mktgcdn.com/p/jU4pRun_1fPOYlRO3E-du8KGahPZZgwyNYl7dDT3lKM/538x194.png"
           alt="Veridian Health Logo"
-          className="h-6 mr-2"
+          className="h-14 mr-4"
         />
-        <span className="text-lg font-bold text-gray-800">Veridian Health</span>
+        <span className="text-lg font-bold text-gray-800"></span>
       </div>
 
+     
       {/* Search Section */}
       <div className="flex items-center flex-1 mx-4">
         <input
           type="text"
           placeholder="Veridian AI Search"
-          className="flex-grow px-4 py-2 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring focus:ring-blue-300"
+          className="flex-auto px-4 py-2 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring focus:ring-blue-300"
         />
-        <button className="absolute px-3 py-2 ml-[-35px] text-lg text-gray-500">
-          🔍
-        </button>
+        
       </div>
 
+     
       {/* Sign-In Section */}
       <div className="flex items-center">
         <span className="text-xl">📂</span> {/* Folder Icon */}
